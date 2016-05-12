@@ -6,7 +6,7 @@ Just a little experiment with [AngularJS](https://github.com/angular/angular.js
 
 At one point, there were plans to upgrade this to later versions of Angular and even to port it to React. But, as this was only ever a fun proof-of-concept project, I never found time for those upgrades. I'll still review/accept any PRs if someone wants to take a crack at it.
 
-![Beeper Plus Screenshot](https://raw.github.com/scriptmaven/angular-beepler-plus/master/screenshot.png)
+![Beeper Plus Screenshot](https://raw.github.com/scriptmaven/angular-beeper-plus/master/screenshot.png)
 
 Installation
 ============

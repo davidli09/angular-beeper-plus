@@ -1,24 +1,24 @@
 'use strict';
 
-describe('DrumMachineCtrl', function() {
-  var scope, ctrl, drumMachine;
+describe('BeeperPlusCtrl', function() {
+  var scope, ctrl, beeperPlus;
 
   beforeEach(function() {
-    module('AngularDrumMachine');
+    module('AngularBeeperPlus');
 
     inject(function($rootScope, $injector, $controller) {
       scope = $rootScope.$new();
-      ctrl = $controller('DrumMachineCtrl', {$scope: scope});
+      ctrl = $controller('BeeperPlusCtrl', {$scope: scope});
     });
 
-    inject(function(_drumMachine_) {
-      drumMachine = _drumMachine_;
-      scope.machine = drumMachine;
+    inject(function(_beeperPlus_) {
+      beeperPlus = _beeperPlus_;
+      scope.machine = beeperPlus;
     });
   });
 
-  it('should set up a drum machine service', function() {
-    expect(drumMachine).toEqual(jasmine.any(Object));
+  it('should set up a beeper plus service', function() {
+    expect(beeperPlus).toEqual(jasmine.any(Object));
     expect(scope.machine).toEqual(jasmine.any(Object));
   });
 

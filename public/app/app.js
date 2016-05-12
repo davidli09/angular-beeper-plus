@@ -1,17 +1,15 @@
 'use strict';
 
-//var app = angular.module('AngularDrumMachine', ['ngRoute']);
-var app = angular.module('AngularDrumMachine', []);
+//var app = angular.module('AngularBeeperPlus', ['ngRoute']);
+var app = angular.module('AngularBeeperPlus', []);
 
-app.run(['drumMachine', '$q', '$rootScope', '$timeout', function(drumMachine, $q, $rootScope, $timeout) {
+app.run(['beeperPlus', '$q', '$rootScope', '$timeout', function(beeperPlus, $q, $rootScope, $timeout) {
   $rootScope.loading = true;
-  $rootScope.$on('$viewContentLoaded', function () {
-      $templateCache.removeAll();
-  });
-  drumMachine.loadInstruments().then(function(result) {
-    drumMachine.loadSequence().then(function(result) {
-      $rootScope.machine = drumMachine;
-      $rootScope.tempo = drumMachine.tempo.call(this);
+
+  beeperPlus.loadInstruments().then(function(result) {
+    beeperPlus.loadSequence().then(function(result) {
+      $rootScope.machine = beeperPlus;
+      $rootScope.tempo = beeperPlus.tempo.call(this);
       $rootScope.loading = false;
     })
   });

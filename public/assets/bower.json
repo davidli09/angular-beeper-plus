@@ -1,10 +1,10 @@
 {
-  "name": "drum_machine",
+  "name": "beeper_plus",
   "version": "0.1.0",
   "authors": [
-    "Doug Johnston <dbjohnston@gmail.com>"
+    "Scriptmaven <bestdevever@gmail.com>"
   ],
-  "description": "Components for the Angular Drum Machine",
+  "description": "Components for the Angular Beeper Plus",
   "license": "MIT",
   "private": true,
   "ignore": [

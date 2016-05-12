@@ -1,12 +1,12 @@
 'use strict';
 
-describe('drumMachine', function() {
+describe('beeperPlus', function() {
   var machine;
 
-  beforeEach(module('AngularDrumMachine'));
+  beforeEach(module('AngularBeeperPlus'));
 
-  beforeEach(inject(function(_drumMachine_) {
-    machine = _drumMachine_;
+  beforeEach(inject(function(_beeperPlus_) {
+    machine = _beeperPlus_;
   }));
 
   it('should have zero rows', function() {

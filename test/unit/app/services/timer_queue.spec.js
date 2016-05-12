@@ -3,7 +3,7 @@
 describe('timerQueue', function() {
   var timerQueue, queue;
 
-  beforeEach(module('AngularDrumMachine'));
+  beforeEach(module('AngularBeeperPlus'));
 
   beforeEach(inject(function(_timerQueue_) {
     timerQueue = _timerQueue_;

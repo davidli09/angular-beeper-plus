@@ -1,7 +1,7 @@
 'use strict';
 
-// drumMachine Model
-app.factory('drumMachine', function($http, $q, timerQueue) {
+// beeperPlus Model
+app.factory('beeperPlus', function($http, $q, timerQueue) {
   // Private variables
   var _playing = false;
   var _currentBeat = 0;
@@ -10,7 +10,7 @@ app.factory('drumMachine', function($http, $q, timerQueue) {
   var _tempo = 120;
   var _timers = timerQueue;
   var _rows = [];
-  console.log('ICHANGEDSOMTHING');
+
   function loadInstruments(instrumentFile) {
     var item, player, instrument;
     var file = instrumentFile || "/app/services/data/instruments/kit-1.json";

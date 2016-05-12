@@ -53,32 +53,12 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'public/assets/js/angular_drums.min.js': ['public/assets/bower_components/angular-route/angular-route.min.js', 'public/assets/bower_components/howler/howler.min.js', 'public/app/**/*.js']
+          'public/assets/js/angualr_beepers.min.js': ['public/assets/bower_components/angular-route/angular-route.min.js', 'public/assets/bower_components/howler/howler.min.js', 'public/app/**/*.js']
         }
       }
     },
-    htmlhint: {
-        build: {
-            options: {
-                'tag-pair': true,
-                'tagname-lowercase': true,
-                'attr-lowercase': true,
-                'attr-value-double-quotes': true,
-                'doctype-first': true,
-                'spec-char-escape': true,
-                'id-unique': true,
-                'head-script-disabled': true,
-                'style-disabled': true
-            },
-            src: ['index.html']
-        }
-    }
-      ,
+
     watch: {
-        html: {
-            files: ['index.html'],
-            tasks: ['htmlhint']
-        },
       sasstocss: {
         files: ['<%= meta.srcPath %>/**/*.scss'],
         tasks: ['sass']

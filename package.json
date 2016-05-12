@@ -1,14 +1,14 @@
 {
-  "name": "Angular-Drum-Machine",
+  "name": "Angular-Beeper-Plus",
   "version": "0.0.1",
-  "description": "Angular Drum Machine",
+  "description": "Angular Beeper Plus",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dougjohnston/angular-drum-machine.git"
+    "url": "https://github.com/scriptmaven/angular-beeper-plus.git"
   },
   "devDependencies": {
     "bower": "latest",
@@ -31,10 +31,5 @@
     "phantomjs-prebuilt": "latest",
     "requirejs": "latest"
   },
-  "author": "Doug Johnston",
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/dougjohnston/angular-drum-machine/issues"
-  },
-  "homepage": "https://github.com/dougjohnston/angular-drum-machine"
+  "author": "Scriptmaven"
 }
